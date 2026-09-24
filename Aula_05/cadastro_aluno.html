@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Cadastro de aluno</title>
+	</head>
+	<body>
+		<header>
+			<h1 style="text-align:center;">Cadastro de aluno</h1>
+			<hr>
+		</header>
+		<form action="Placeholder.php" method="POST">
+			<label for="ra">Registro do aluno</label>
+			<br>
+			<input type="text" id="ra" name="ra" value="20261015" disabled>
+			<br>
+			<label for="nome_completo">Nome completo</label>
+			<br>
+			<input type="text" id="nome_completo" name="nome_completo" placeholder="nome do aluno" minlength="3" maxlenght="255" required>
+			<br>
+			<label for="email">email</label>
+			<br>
+			<input type="email" id="email" name="email" placeholder="nome@email.com" required>
+			<br>
+			<label for="telefone">Telefone do aluno</label>
+			<br>
+			<input type="tel" id="telefone" name="telefone" placeholder="(00) 0000-0000" required>
+			<br>
+			<label for="data_nascimento">Data de nascimento</label>
+			<br>
+			<input type="date" id="data_nascimento" name="data_nascimento" min="2000-01-01" max="2009-01-01" required>
+			<br>
+			<label for="idade">Idade</label>
+			<br>
+			<input type="number" id="idade" name="idade" min="17" max="100" required>
+			<br>
+			<label for="genero">Gênero</label>
+			<br>
+			<input type="radio" id="masculino" name="genero" value="masculino" required>Masculino
+			<br>
+			<input type="radio" id="feminino" name="genero" value="feminino">Feminino
+			<br>
+			<input type="radio" id="outro" name="genero" value="outro">Outro
+			<br>
+			<label for="classe"> Selecione a turma:</label>
+			<br>
+			<select name="turma" id="turma">
+				<option value="selecione">selecione...</option>
+				<option value="1 em">1 em</option>
+				<option value="2 em">2 em</option>
+				<option value="3 em">3 em</option>
+			</select>
+			<br>
+			<label for="foto">Foto do aluno:</label>
+			<br>
+			<input type="file" id="foto" name="foto" required>
+			<br>
+			<label for="comentarios"> Reclamações, comentários e elogios...</label>
+			<br>
+			<textarea id="comentarios" name="comentarios" placeholder="texto..."></textarea>
+			<br>
+			<input type="checkbox" id="termo" name="termo" required>li e aceito os termos de condição
+			<br>
+			<button type="submit">Cadastrar aluno</button>
+			
+		</form>
+	</body>
+</html>
