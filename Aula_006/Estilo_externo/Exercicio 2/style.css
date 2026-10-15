@@ -1,0 +1,11 @@
+body{
+    background-color: azure;
+}
+img{
+    border-radius: 15px;
+    border: solid 3px #cccccc;
+    box-shadow: 4px 4px 10px #888888;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

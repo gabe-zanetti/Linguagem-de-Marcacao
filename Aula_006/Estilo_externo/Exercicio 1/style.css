@@ -1,0 +1,19 @@
+body{
+    background-image: linear-gradient(to top, rgb(61, 34, 68), rgb(82, 33, 86));
+}
+
+main{
+    padding: 100px;
+    margin: 100px;
+    border-radius: 35px;
+    background-color: rgb(167, 128, 179);
+}
+p.star{
+    font-family: Arial;
+    font-size: 18px;
+    color:#33333333;
+    text-align: justify;
+    line-height: 1.6;
+    text-shadow: 2px 2px 5px #aaaaaaaa;
+    text-indent: 30px;
+}
