@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+main{
+    padding: 10px;
+    border: 1px solid grey;
+    margin: 35px;
+    border-radius: 35px;
+    background-color: white;
+}
+
+h1{
+    padding: 8px;
+    text-align: center;
+    color: greenyellow;
+    text-transform: uppercase;
+}
+
+#texto{
+    text-indent: 50px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.primeiro{
+    color: purple
+}
+
+.primeiro:hover{
+    color:orange
+}
+
+.segundo:hover{
+    font-size: 150%
+}
+.terceiro:hover{
+    background-color: red
+}
+
+.quarto:hover{
+    font-family: monospace
+}
+
+.quinto:hover{
+    text-decoration: none
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#article_central {
+    border: 1x solid gray;
+    padding: 50px;
+    background-color: darkgray;
+    color: white
+}
+
+ul.a{
+    list-style-type: square;
+}
+
+.b li{
+    font-family:'Courier New';
+}
+
+ol.c{
+    list-style-type: upper-roman;
+}
+
+ol.d{
+    list-style-type: lower-greek;
+}
+
+#tabela_estilosa{
+    font-family: Arial;
+    border-collapse: collapse;
+    width:100%;
+}
+
+#tabela_estilosa td, #tabela_estilosa th{
+    border:1px solid #ddd;
+    padding:8p;
+}
+
+#tabela_estilosa tr:nth-child(even){
+    background-color: #f2f2f2f2;
+    color: black;
+
+}
+
+#tabela_estilosa tr:hover{
+    background-color: #ddd;
+    color:black
+}
+
+#tabela_estilosa th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(24, 22, 48);
+}
