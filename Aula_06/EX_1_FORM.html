@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Formulario</title>
+	</head>
+	<body>
+		<form action="Placeholder.php" method="POST">
+		<label for="">Código</label>
+		<input type="number" id="codigo" name="codigo" placeholder="0" disabled>
+		<br>
+		<label for="">Numero do Contrato</label>
+		<input type="number" id="numero_contrato" name="numero_contrato" required>
+		<label for="">Numero da loja</label>
+		<input type="number" id="numero_loja" name="numero_loja" required>
+		<br>
+		<label for="">Descrição</label>
+		<input type="text" id="descrição" name="descrição" required>
+		<br>
+		<label for="">Data</label>
+		<input type="date" id="data" name="data" required>
+		<br>
+		<label for="">Operadora</label>
+		<select name="operadora" id="operadora">
+				<option value="operadora_1" required>Operadora 1</option>
+				<option value="operadora_2">Operadora 2</option>
+				<option value="operadora_3">Operadora 3</option>
+		</select>
+		<br>
+		<label for="">Filial</label>
+		<select name="filia" id="filia">
+				<option value="filial_1" required>Filial 1</option>
+				<option value="filial_2">Filial 2</option>
+				<option value="filial_3">Filial 3</option>
+		</select>
+		<br>
+		<label for="">Empresa matriz</label>
+		<select name="empresa_matriz" id="empresa_matriz">
+				<option value="empresa_matriz_1" required>Empresa matriz 1</option>
+				<option value="empresa_matriz_2">Empresa matriz 2</option>
+				<option value="empresa_matriz_3">Empresa matriz 3</option>
+		</select>
+		<br>
+		<label for=""> Origem das contas contabeis</label>
+		<select name="origem_contas_contabeis" id="origem_contas_contabeis">
+				<option value="origem_contas_contabeis_1" >Contrato</option>
+				<option value="origem_contas_contabeis_2">Origem 2</option>
+				<option value="origem_contas_contabeis_3">Origem 3</option>
+		</select>
+		<input type="checkbox" id="deposito" name="deposito">Depósito na conta informada no arquivo
+		<br>
+		<label for=""> Status do contrato</label>
+		<select name="status_contrato" id="status_contrato">
+				<option value="Ativo">Ativo</option>
+				<option value="Não ativo">Não ativo</option>
+		</select>
+		<input type="checkbox" id="conciliação" name="conciliação">Conciliação consolidada
+		<label for=""> Permitir conciliar manualmente quando há variação de até</label>
+		<input type="number" step="0.01" id="variacao" name="variacao">
+		<br>
+		<label for=""> Identificar comprovante por</label>
+		<select name="status_contrato" id="status_contrato">
+				<option value="Número da Autorização">Número da Autorização</option>
+				<option value="Número_1">10200</option>
+				<option value="Número_2">10202</option>
+		</select>
+		<input type="checkbox" id="remover_zeros" name="remover_zeros" >Remover zeros esquerdas do Numero do comprovante
+		<input type="checkbox" id="validar" name="validar" >Validar valores na conciliação automática
+		<br>
+		<input type="checkbox" id="campo_usuario" name="campo_usuario" >Usar campo de usuário [Data de transação do Cartão] do contas a receber para identificar o comprovante na concíliação
+		<br>
+		<input type="checkbox" id="gerar_contas" name="gerar_contas" >Gerar contas a receber por conta para comprovantes não identificados
+		<input type="checkbox" id="contas_receber" name="contas_receber" disabled >Contas a receber agrupado
+		<br>
+		<input type="checkbox" id="projeto_cadastro" name="projeto_cadastro" >Usar projetos do cadastro de equipamento
+		<input type="checkbox" id="lcm" name="lcm" >LCM agrupado do comprovante de cartão
+		<br>
+		<label for="">Cartão</label>
+		<input type="text" id="cartao" name="cartao" placeholder="Não informado" disabled>
+		<br>
+		<label for="">Forma de pagamento</label>
+		<input type="text" id="forma_pagamento" name="forma_pagamento" placeholder="Não informado" disabled>
+		<br>
+		<label for="">Conta de provisão</label>
+		<input type="numero" id="numero_conta_provisao" name="numero_conta_provisao">
+		<input type="text" id="desc_conta_provisao" name="desc_conta_provisao">
+		<br>
+		<label for="">Conta do banco</label>
+		<input type="numero" id="numero_conta_banco" name="numero_conta_banco">
+		<input type="text" id="desc_conta_banco" name="desc_conta_banco">
+		<br>
+		<label for="">Conta para comissão</label>
+		<input type="numero" id="numero_conta_comissao" name="numero_conta_comissao">
+		<input type="text" id="desc_conta_comissao" name="desc_conta_comissao">
+		<br>
+		<label for="">Conta para cancelamento</label>
+		<input type="numero" id="numero_conta_cancelamento" name="numero_conta_cancelamento">
+		<input type="text" id="desc_conta_cancelamento" name="desc_conta_cancelamento">
+		<br>
+		<label for="">Conta de antecipação</label>
+		<input type="numero" id="numero_conta_antecipacao" name="numero_conta_antecipacao">
+		<input type="text" id="desc_conta_antecipacao" name="desc_conta_antecipacao">
+		<br>
+		<label for="">Conta de ajuste a debito</label>
+		<input type="numero" id="numero_conta_ajuste_debito" name="numero_conta_ajuste_debito">
+		<input type="text" id="desc_conta_ajuste_debito" name="desc_conta_ajuste_debito">
+		<br>
+		<label for="">Conta de ajuste a credito</label>
+		<input type="numero" id="numero_conta_ajuste_credito" name="numero_conta_ajuste_credito">
+		<input type="text" id="desc_conta_ajuste_credito" name="desc_conta_ajuste_credito">
+		<br>
+		<label for="">Conta de despesas de aluguel</label>
+		<input type="numero" id="numero_conta_despesas_aluguel" name="numero_conta_despesas_aluguel">
+		<input type="text" id="desc_conta_despesas_aluguel" name="desc_conta_despesas_aluguel">
+		<br>
+		<label for="">Conta de compensação</label>
+		<input type="numero" id="numero_conta_compensacao" name="numero_conta_compensacao">
+		<input type="text" id="desc_conta_compensacao" name="desc_conta_compensacao">
+		<br>
+		<button type="submit" style="background-color:yellow;">Inserir</button>
+		<button type="reset" style="background-color:yellow;">Cancelar</button>
+		<button type="" style="background-color:yellow;">Log</button>
+		</form>
+	</body>
+</html>
