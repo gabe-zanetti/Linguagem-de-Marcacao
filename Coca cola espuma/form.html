@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Peçás</a>
+                        <div class="dropdown-content">
+                            <a href="tabela.html">produtos</a>
+                            <a href="form.html">Cadastrar produto</a>
+                        </div>
+                </ul>
+            </nav>
+        </header>
+    <div>
+        <img href="logo.png">
+        <form action="Placeholder.php" method="POST">
+            <h2></h2>
+            <label for="">Nome do produto</label>
+		    <input type="text" id="nome_produto" name="nome_produto" placeholder="Nome do produto..." required>
+		    <br>
+            <label for=""> Código do produto</label>
+		    <input type="text" id="codigo_produto" name="codigo_produto" placeholder="Código do produto..." required>
+		    <br>
+            <label for="">Categoria do produto</label>
+		    <select name="categoria_produto" id="categoria_produto">
+				<option value="refrigerantes" required>Refrigerantes</option>
+				<option value="sucos">Sucos</option>
+				<option value="aguas">Águas</option>
+                <option value="chas" >Chás</option>
+				<option value="bebidas_esportivas">Bebidas Esportivas</option>
+                <option value="energeticos">Energeticoss</option>
+		    </select>
+		    <br>
+            <select name="marca_produto" id="marca_produto">
+				<option value="coca_cola" required>Coca Cola</option>
+				<option value="Fanta">Fanta</option>
+				<option value="Sprite">Sprite</option>
+                <option value="Schweppes" >Schweppes</option>
+				<option value="del_valle">Del Valle</option>
+                <option value="crystal">Crystal</option>
+                <option value="powerade">Powerade</option>
+		    </select>
+            <br>
+            <label>Descrição do produto</label>
+            <input type="textarea" placeholder="Descreva o produto...">
+            <br>
+            <h2></h2>
+            <label for="">Preço do produto</label>
+		    <input type="number" id="preco_produto" name="preco_produto" min=0 step=00.1 required>
+		    <br>
+            <label for="">Preço promocional</label>
+		    <input type="number" id="preco_promocional" name="preco_promocional" min=0 step=00.1 required>
+		    <br>
+            <label for="">Quantidade em estoque</label>
+		    <input type="number" id="quantidade_estoque" name="quantidade_estoque" min=0 required>
+		    <br>
+            <label for="">Estoque minimo</label>
+		    <input type="number" id="estoque_minimo" name="estoque_minimo" min=0 required>
+		    <br>
+            <label for="">Desconto %</label>
+		    <input type="range" id="desconto" name="desconto" min=0 max=100 step=5 required>
+		    <br>
+            <label>Caracteristicas da bebida</label>
+            <label for="">Sem açúcar</label>
+		    <input type="checkbox" id="sem_acucar" name="sem_acucar">
+		    <br>
+            <label for="">Baixa caloria</label>
+		    <input type="checkbox" id="baixa_caloria" name="baixa_caloria">
+		    <br>
+            <label for="">Com gás</label>
+		    <input type="checkbox" id="com_gas" name="com_gas">
+		    <br>
+            <label for="">Com cafeína</label>
+		    <input type="checkbox" id="com_cafeina" name="com_cafeina">
+		    <br>
+            <label for="">Embalagem retornável</label>
+		    <input type="checkbox" id="embalagem_retornavel" name="embalagem_retornavel">
+		    <br>
+            <h2>Tipo de embalagem</h2>
+            <label></label>Volume da embalagem</label>
+            <select name="volume" id="volume">
+				<option value="200" required>200 ml</option>
+				<option value="250">250 ml</option>
+				<option value="310">310 ml</option>
+                <option value="350" >350 ml</option>
+				<option value="500">500 ml</option>
+                <option value="600">600 ml</option>
+                <option value="1000">1000 ml</option>
+                <option value="1500">1500 ml</option>
+                <option value="2000">2000 ml</option>
+                <option value="3000">3000 ml</option>
+		    </select>
+            <label>Peso do produto em gramas</label>
+            <input type="number" id="peso_gramas" name="peso_gramas" min=0 step=0.1>
+            <label>Cor predominante na embalagem</label>
+            <input type="color" placeholder=#ff00000>
+            <h2></h2>
+            <label>Data de fabricação</label>
+            <input type="date" id="data_fabricacao" name="data_fabricacao">
+            <label>Data de validade</label>
+            <input type="date" id="data_validade" name="data_validade">
+            <label>Horário de fabricação</label>
+            <input type="time" id="horario_fabricacao" name="horario_fabricacao">
+            <label>Mês de lançamento do produto</label>
+            <input type="mouth" id="mes_lancamento" name="mes_lancamento">
+            <label>Número do lote</label>
+            <input type="text" id="numero_lote" name="numero_lote">
+            <label>Pais de fabricação</label>
+            <select name="volume" id="volume">
+				<option value="brasil" required>Brasil</option>
+				<option value="argentina">Argentina</option>
+				<option value="chile">Chile</option>
+                <option value="mexico" >México</option>
+				<option value="estados_unidos">Estados Unidos</option>
+                <option value="outro">Outro</option>
+		    </select>
+            <label>Quantidade de calorias</label>
+            <input type="number" id="quantidade_calorias" name="quantidade_calorias" min=0>
+            <br>
+            <label>Quantidade de açúcar</label>
+            <input type="number" id="quantidade_acucar" name="quantidade_acucar">
+            <br>
+            <label>Quantidade de sódio</label>
+            <input type="number" id="quantidade_sodio" name="quantidade_sodio">
+            <br>
+            <label>Quantidade de cafeina</label>
+            <input type="number" id="quantidade_cafeina" name="quantidade_cafeina">
+            <br>
+            <label>Ingredientes</label>
+            <input type="textarea" id="ingredientes" name="ingredientes" placeholder="Informe os ingredientes...">
+            <h2>Fornecedor e distribuição</h2>
+            <label>Nome do fornecedor</label>
+            <input type="text" id="nome_fornecedor" name="nome_fornecedor" placeholder="Nome do fornecedor...">
+            <br>
+            <label>E-mail do fornecedor</label>
+            <input type="email" id="email_fornecedor" name="email_fornecedor" placeholder="email@empresa.com">
+            <br>
+            <label>Telefone de fornecedor</label>
+            <input type="tel" id="telefone_fornecedor" name="telefone_fornecedor" placeholder="(00)00000-0000">
+            <br>
+            <label>Site do fornecedor</label>
+            <input type="url" id="site_fornecedor" name="site_fornecedor" placeholder="https://www.exemplo.com">
+            <br>
+            <select name="volume" id="volume">
+				<option value="sao_paulo" required>São Paulo</option>
+				<option value="rio_janeiro">Rio de janeiro</option>
+				<option value="minas_gerais">Minas gerais</option>
+                <option value="parana" >Paraná</option>
+				<option value="santa_catarina">Santa Catarina</option>
+                <option value="rio_grande_sul">Rio Grande do Sul</option>
+                <option value="outro">Outro</option>
+		    </select>
+            <br>
+            <label>Cidade de distribuição</label>
+            <input type="text" id="cidade_distribuicao" name="cidade_distribuicao" placeholder="Cidade...">
+            <br>
+            <label>CEP do centro de distribuição</label>
+            <input type="text" id="cep_distribuicao" name="cep_distribuicao" placeholder="00000-000" max=9>
+            <br>
+            <label>Imagem do produto</label>
+            <input type="file" id="imagem_produto" name="imagem_produto" accept="image/">
+            <br>
+            <label>Ficha tecnica do produto</label>
+            <input type="file" id="ficha_produto" name="ficha_produto" accept=".pdf">
+            <br>
+            <label>Link da pagina do produto</label>
+            <input type="url" id="link_produto" name="link_produto" placeholder="https://www.exemplo.com/produto">
+            <br>
+            <label>Canais de venda</label>
+            <br>
+            <label>supermercados</label>
+            <input type="checkbox" id="supermercado" name="supermercado">
+            <br>
+            <label>Restaurantes</label>
+            <input type="checkbox" id="restaurante" name="restaurante">
+            <br>
+            <label>Lojas de conveniência</label>
+            <input type="checkbox" id="coveniencia" name="coveniencia">
+            <br>
+            <label>Distribuidoras</label>
+            <input type="checkbox" id="distribuidoras" name="distribuidoras">
+            <br>
+            <label>Internet</label>
+            <input type="checkbox" id="internet" name="internet">
+
+            <button type="submit">Cadastrar produto</button>
+            <button type="reset">Limpar formulário</button>
+        </form>
+    </div>
+</body>
+</html>
