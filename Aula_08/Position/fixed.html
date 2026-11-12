@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>position; fixed;</title>
+<style>
+
+    .relative{
+        position: relative;
+        margin-left: 30px;
+        border: 3px solid #73ad21;
+    
+    }
+    .static{
+    position: static;
+    border: 3px solid #73ad21;
+    margin-top: 10%;
+    }
+
+    .fixed{
+        position: fixed;
+        margin: 5%;
+        border: 3px solid #ff00aa;
+        bottom: 0;
+        padding: 5%;
+        right:0;
+        background-color: #fff;
+    }
+    
+    .absolute{
+        position: absolute;
+        border: 3px dotted #bc389d
+
+    }
+</style>
+</head>
+<body>
+
+    <div class="static">
+        <p>Essa div tem position; static</p>
+    </div>
+
+    <div class="relative">
+        <p>Essa div tem position; relative;</p>
+    </div>
+
+    <div class="absolute">
+        <p>essa div tem position; absolute; </p>
+    </div>
+    <div class="fixed">
+        <p>Essa div tem position; fixed;</p>
+    </div>
+
+</body>
+</html>

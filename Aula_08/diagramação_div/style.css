@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+.minhadiv{
+    border: 5px outset #fff000;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5% auto 5% auto;
+    padding: 5%;
+
+}
+
+
+.corazul{
+    border: 5px outset #000fff;
+}
+
+.corvermelha{
+    border: 5px outset #ff0000;
+}
+
+.corlaranja{
+    border: 5px outset #ffb300;
+}

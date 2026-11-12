@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+.box1{
+    border: 2px solid #ff0000;
+
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 60px;
+    padding-right: 100px;
+
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-right: 400px;
+
+}
+
+/*Margin e fora, padding e dentro*/
+
+.box2{
+    border: 5px solid #000fff;
+    padding-top: 10%;
+    padding-left:50%;
+    padding-bottom: 15%;
+
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 30%;
+}
+
+.box3{
+    border-left: 10px solid #ff00ff;
+    border-top: 10px dashed #bb00ff;
+
+    margin: 5% 10% 5% 10%;
+
+    padding: 10% 5% 30% 15%;
+
+    margin: 5% 5% 5% 10%;
+}
+
+/*Use porcentagem em vez de px para ser responsivel*/
